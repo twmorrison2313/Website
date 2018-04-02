@@ -1,0 +1,282 @@
+/* =================================
+  Base Styles
+==================================== */
+
+* {
+	box-sizing: border-box;
+}
+body {
+	font-size: 1.35em;
+	font-family: 'Varela Round', sans-serif;
+	color: #fff;
+	background: #e8e9e9;
+	padding-left: 2%;
+	padding-right: 2%;
+
+}
+
+header{
+
+
+}
+
+background {
+	width: 100%;
+
+}
+
+a {
+	text-decoration: none;
+
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+
+.main-nav a {
+	text-align: center;
+	display: block;
+	padding: 10px 15px;
+
+}
+
+.main-nav a, .name a, .key-concepts a{
+	font-size: .95em;
+	color: #da3e3e;
+	text-transform: uppercase;
+
+}
+a:hover,
+.nav-button:hover  {
+  color: #093a58;
+
+}
+
+.nav-container a {
+	font-size: .95em;
+	color: #3acec2;
+	text-transform: uppercase;
+}
+
+
+/* ---- Containers ---- */
+
+
+
+
+.main-nav {
+	color: #3db5da;
+}
+
+.nav-container, .key-concepts{
+	margin-left: -5px;
+	margin-right: -5px;
+  border-radius: 5px;
+
+	margin-top: 1px;
+	margin-bottom: 1px;
+  height: 25vh;
+}
+
+.key-concepts{
+	height:auto;
+
+}
+
+
+
+
+
+/*---------------------- Dividers ---------------------*/
+
+.key-concepts{
+	margin-top: 20px;
+	vertical-align: middle;
+
+}
+
+.banner{
+background-image: url("dish.jpg");
+ opacity: 0.85;
+background-position:center;
+background-size:cover;
+color: #fff;
+text-align: center;
+height: 50vh;
+vertical-align: middle;
+line-height: 50vh;
+margin-bottom: .5em;
+border-radius: 5px;
+margin-top: .1em;
+
+}
+
+
+.content-divider {
+	text-align:center;
+	background-image: url("lightbulbblk.jpg");
+	opacity: 0.85;
+	background-size: cover;
+	background-position: right;
+
+	height: 50vh;
+	vertical-align: middle;
+	line-height: 50vh;
+	margin-top: .1em
+
+	color: #fff;
+	padding: 15px;
+	margin-top: 5px;
+
+	border-radius: 3px;
+  text-align: center;
+
+}
+
+.headline{
+	margin: 0;
+}
+
+.main-footer {
+	text-align: center;
+	background: #d9e4ea;
+	padding: 2em 0;
+	margin-top: 30px;
+}
+
+
+
+
+
+/* ----------- Items -------------------*/
+
+.nav-button{
+	color: #fff;
+	padding: 15px;
+	margin: 5px;
+	border-radius: 3px;
+  text-align: center;
+}
+
+
+/*-------------- Nav Buttons ---------------*/
+#current-unit-button{
+	background-color: #d62929;
+}
+
+#past-quarters-button{
+	background-color: #c12525;
+}
+
+#key-concepts-button{
+	background-color: #ab2121;
+
+}
+
+/*-------------- Key Concept Buttons ---------------*/
+
+
+#momentum-button{
+	background-color: #1a75ff;
+}
+
+#force-button{
+	background-image: url("waves.jpg");
+	background-position: center;
+	background-size: cover;
+	opacity: .85;
+}
+
+#inertia-button{
+	background-color:#005ce6;
+
+}
+
+#newtons-first-law-button{
+	background: url("rocket.jpg");
+	background-position: center;
+	background-size:cover;
+	opacity: .85;
+
+}
+
+
+#else-button{
+	background-color:#0047b3;
+
+}
+
+#here-button{
+	background-color: #003d99;
+}
+
+
+
+
+
+
+@media (min-width:769px) {
+
+	.button {
+		flex-grow: 1;
+		flex-basis: 0;
+
+	}
+
+	.nav-container {
+  	display: flex;
+  	align-items: center;
+  	justify-content:space-around;
+  	align-items: stretch;
+  	text-align: center;
+  	vertical-align: middle;
+  	line-height: 20vh;
+		margin-bottom: .1em;
+	}
+
+.concept-button{
+	height: 75px;
+
+}
+
+ .key-concepts{
+
+	 display: grid;
+	 grid-template-columns: 1fr 1fr 1fr;
+	 grid-template-rows: 1fr, 1fr;
+	 grid-gap: 15px 1px;
+
+ }
+
+	.main-header {
+		display: flex;
+
+
+
+		}
+	.main-nav {
+		display: flex;
+	}
+	.main-header {
+		flex-direction: column;
+		align-items: center;
+
+
+
+
+
+	}
+
+
+}
+
+@media (min-width: 1025px) {
+
+	.main-header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+}
